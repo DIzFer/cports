@@ -1,0 +1,4 @@
+type = process
+command = /usr/bin/snapclient --player pipewire --logsink system tcp://$1
+log-type = buffer
+depends-on: pipewire

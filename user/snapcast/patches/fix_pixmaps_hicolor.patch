@@ -1,0 +1,11 @@
+diff --git a/client/CMakeLists.txt b/client/CMakeLists.txt
+index c0bbf34e..8ca5d77f 100644
+--- a/client/CMakeLists.txt
++++ b/client/CMakeLists.txt
+@@ -162,5 +162,5 @@ else()
+   install(
+     FILES etc/snapcast.svg
+     COMPONENT client
+-    DESTINATION ${CMAKE_INSTALL_DATADIR}/pixmaps)
++    DESTINATION ${CMAKE_INSTALL_DATADIR}/icons/hicolor)
+ endif()
