@@ -1,0 +1,4 @@
+type = process
+command = /usr/bin/snapclient --player pulse --logsink system --host $1
+log-type = buffer
+depends-on: pipewire-pulse
