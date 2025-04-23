@@ -1,0 +1,4 @@
+type = process
+command = /usr/bin/snapserver
+log-type = buffer
+depends-on: network.target
