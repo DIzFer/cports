@@ -1,0 +1,12 @@
+pkgname = "perl-config-inifiles"
+pkgver = "3.000003"
+pkgrel = 0
+build_style = "perl_module"
+hostmakedepends = ["perl"]
+makedepends = ["perl", "perl-io-stringy", "perl-module-build"]
+depends = ["perl"]
+pkgdesc = "Module for reading .ini-style configuration files"
+license = "Artistic-1.0-Perl OR GPL-1.0-or-later"
+url = "https://metacpan.org/pod/Config::IniFiles"
+source = f"$(CPAN_SITE)/Config/Config-IniFiles-{pkgver}.tar.gz"
+sha256 = "3c457b65d98e5ff40bdb9cf814b0d5983eb0c53fb8696bda3ba035ad2acd6802"
