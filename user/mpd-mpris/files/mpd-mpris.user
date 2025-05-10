@@ -1,0 +1,3 @@
+type = process
+command = /usr/bin/mpd-mpris
+depends-on = dbus
