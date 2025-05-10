@@ -1,0 +1,3 @@
+type = process
+command = python -m blueblack.main
+depends-on = dbus
