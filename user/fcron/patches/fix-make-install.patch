@@ -1,0 +1,22 @@
+diff --git a/Makefile.in b/Makefile.in
+index c82582f..db658e6 100644
+--- a/Makefile.in
++++ b/Makefile.in
+@@ -144,7 +144,7 @@ test: fcron
+ 	$(MAKE) -C test tests
+ 
+ 
+-install: install-staged strip perms
++install: install-staged strip
+ ifeq ($(BOOTINSTALL), 1)
+ 	$(SRCDIR)/script/boot-install "$(INSTALL) -o $(ROOTNAME)" $(DESTSBIN) $(DEBUG) $(FCRONTABS) $(ANSWERALL) $(SRCDIR)
+ endif
+@@ -160,8 +160,6 @@ install-staged: all
+ # needed by boot-install script :
+ 	echo `fcron -V 2>&1 | grep "^fcron "` > PREVIOUS_VERSION && chmod a+rw PREVIOUS_VERSION
+ 
+-	$(SRCDIR)/script/user-group $(USERNAME) $(GROUPNAME) $(ANSWERALL) $(SRCDIR)
+-
+ # check if the directories we use exist, and if not, create them
+ 	if test ! -d $(DESTDIR)$(DESTSBIN); then $(INSTALL) -m 755 -d $(DESTDIR)$(DESTSBIN) ; fi
+ 	if test ! -d $(DESTDIR)$(DESTBIN); then $(INSTALL) -m 755 -d $(DESTDIR)$(DESTBIN) ; fi

@@ -1,0 +1,7 @@
+#!/bin/sh
+
+rm /var/spool/fcron/systab.orig
+cp /usr/share/fcron/systab.orig /var/spool/fcron/systab.orig
+fcrontab -u systab -z
+
+exec /usr/libexec/fcron "$@"
