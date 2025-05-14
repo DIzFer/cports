@@ -1,0 +1,4 @@
+type = process
+command = /usr/libexec/fcron-systab-wrapper -f
+depends-on: local.target
+before: login.target
