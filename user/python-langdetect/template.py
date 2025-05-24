@@ -1,0 +1,12 @@
+pkgname = "python-langdetect"
+pkgver = "1.0.9"
+pkgrel = 0
+build_style = "python_pep517"
+makedepends = ["python-build", "python-setuptools"]
+checkdepends = ["python-pytest", "python-installer", "python-six"]
+depends = ["python"]
+pkgdesc = "Language detection library ported from Google's language-detection"
+license = "Apache-2.0"
+url = "https://pypi.org/project/langdetect"
+source = f"$(PYPI_SITE)/l/langdetect/langdetect-{pkgver}.tar.gz"
+sha256 = "cbc1fef89f8d062739774bd51eda3da3274006b3661d199c2655f6b3f6d605a0"
