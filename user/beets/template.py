@@ -1,6 +1,6 @@
 # update patches/version.patch on updates
 pkgname = "beets"
-pkgver = "2.5.0"
+pkgver = "2.7.1"
 pkgrel = 0
 build_style = "python_pep517"
 make_check_args = [
@@ -48,7 +48,7 @@ pkgdesc = "CLI media library management"
 license = "MIT"
 url = "https://beets.io"
 source = f"$(PYPI_SITE)/b/beets/beets-{pkgver}.tar.gz"
-sha256 = "7f12cce3d5c3bfd68144407e86ae7fbaada6dc41676a49ab42027e156bdcfb73"
+sha256 = "95f20c4087be2f4b2ab400be07cbea380bec2720e2a83180b025a972ee94bd22"
 
 
 def init_check(self):
